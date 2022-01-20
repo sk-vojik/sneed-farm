@@ -1,0 +1,304 @@
+{
+  "contractName": "ISeedToken",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "mint",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"mint\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Github/SeedFarm/contracts/ISeedToken.sol\":\"ISeedToken\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Github/SeedFarm/contracts/ISeedToken.sol\":{\"keccak256\":\"0xd6d1de4bdaa7032a72361a53b62cd9fa2209d91a217e77119f492bb486a6eab4\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://be846f5c54817886724ad3bb5acbe319c9a037ed558f84036b13dca884124afd\",\"dweb:/ipfs/QmSciJCHgoG7PC9nTYPoYPUCVwSTzGjDZ1Yt2VXvgTg3gg\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: GPL-3.0\r\n\r\npragma solidity ^0.8.7; \r\n\r\ninterface ISeedToken {\r\n\r\n    function mint(address to, uint256 amount) external; \r\n\r\n}",
+  "sourcePath": "C:/Github/SeedFarm/contracts/ISeedToken.sol",
+  "ast": {
+    "absolutePath": "/C/Github/SeedFarm/contracts/ISeedToken.sol",
+    "exportedSymbols": {
+      "ISeedToken": [
+        9
+      ]
+    },
+    "id": 10,
+    "license": "GPL-3.0",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".7"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:23:0"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 9,
+        "linearizedBaseContracts": [
+          9
+        ],
+        "name": "ISeedToken",
+        "nameLocation": "77:10:0",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "40c10f19",
+            "id": 8,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mint",
+            "nameLocation": "106:4:0",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nameLocation": "119:2:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8,
+                  "src": "111:10:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "111:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "131:6:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8,
+                  "src": "123:14:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 4,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "123:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "110:28:0"
+            },
+            "returnParameters": {
+              "id": 7,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "147:0:0"
+            },
+            "scope": 9,
+            "src": "97:51:0",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 10,
+        "src": "67:87:0",
+        "usedErrors": []
+      }
+    ],
+    "src": "39:115:0"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Github/SeedFarm/contracts/ISeedToken.sol",
+    "exportedSymbols": {
+      "ISeedToken": [
+        9
+      ]
+    },
+    "id": 10,
+    "license": "GPL-3.0",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".7"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:23:0"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 9,
+        "linearizedBaseContracts": [
+          9
+        ],
+        "name": "ISeedToken",
+        "nameLocation": "77:10:0",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "40c10f19",
+            "id": 8,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mint",
+            "nameLocation": "106:4:0",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nameLocation": "119:2:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8,
+                  "src": "111:10:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "111:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "131:6:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8,
+                  "src": "123:14:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 4,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "123:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "110:28:0"
+            },
+            "returnParameters": {
+              "id": 7,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "147:0:0"
+            },
+            "scope": 9,
+            "src": "97:51:0",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 10,
+        "src": "67:87:0",
+        "usedErrors": []
+      }
+    ],
+    "src": "39:115:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.7+commit.e28d00a7.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-12-27T15:17:08.341Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

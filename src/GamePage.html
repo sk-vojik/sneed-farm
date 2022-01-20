@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sneedfarm</title>
+    <link rel="stylesheet" href="GamePage_Style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inside">
+          <div class="header__title">SeedFarm</div>
+          <div class="header__nav">
+            <div class="btn Main_Page_btn">
+              <a href="/MainPage.html">Main Page</a>
+            </div>
+            <div class="btn"><a>Game</a></div>
+          </div>
+          <div class="metamask__outer">
+            <div id="eth-button" class="metamask">MetaMask</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body">
+      <div class="Game__container">
+        <div class="canvas">
+          <canvas
+            id="playground"
+            width="1152"
+            height="576"
+            class="game"
+          ></canvas>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="Scripts/Engine/main.js"></script>
+    <script type="module" src="Scripts/Blockchain/web3.js"></script>
+    <script type="module" src="Scripts/Blockchain/metamask.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  </body>
+</html>
