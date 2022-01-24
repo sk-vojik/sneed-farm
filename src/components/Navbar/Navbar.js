@@ -72,6 +72,9 @@ const Navbar = (props) => {
           <Link style={{ textDecoration: 'none' }} variant="button" color="textPrimary" href="/" className={classes.link}>
             Home
           </Link>
+          <Link style={{ textDecoration: 'none' }} variant="button" color="textPrimary" href="/farm" className={classes.link}>
+            Game
+          </Link>
         </nav>
       </Toolbar>
     </AppBar>
