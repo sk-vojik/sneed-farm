@@ -19,26 +19,17 @@ const useStyles = makeStyles((theme) => ({
     borderBottom: `1px solid ${theme.palette.divider}`,
   },
   toolbar: {
-    flexWrap: 'wrap',
+    display: 'flex',
   },
   toolbarTitle: {
     flexGrow: 1,
   },
   link: {
     margin: theme.spacing(1, 1.5),
+    color: "black"
   },
   heroContent: {
     padding: theme.spacing(8, 0, 6),
-  },
-  cardHeader: {
-    backgroundColor:
-      theme.palette.type === 'light' ? theme.palette.grey[200] : theme.palette.grey[700],
-  },
-  cardPricing: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'baseline',
-    marginBottom: theme.spacing(2),
   },
   footer: {
     borderTop: `1px solid ${theme.palette.divider}`,
@@ -61,20 +52,33 @@ const Navbar = (props) => {
 
   return (
 
-    <AppBar position="sticky" color="default" elevation={0} className={classes.appBar}>
+    <AppBar position="sticky" color="primary" elevation={0} className={classes.appBar}>
       <Toolbar className={classes.toolbar}>
 
-        <Typography style={{ display: "inherit" }} variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
-          Sneed Farm
-        </Typography>
+        <Link style={{ textDecoration: 'none' }} variant="button" color="textPrimary" href="/" className={classes.link}>
+          <Typography style={{ margin: "0px 12px 0px 0px", display: "inherit", color: "black" }} variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
+            Sneed Farm
+          </Typography>
+        </Link>
 
-        <nav>
-          <Link style={{ textDecoration: 'none' }} variant="button" color="textPrimary" href="/" className={classes.link}>
-            Home
-          </Link>
-          <Link style={{ textDecoration: 'none' }} variant="button" color="textPrimary" href="/farm" className={classes.link}>
-            Game
-          </Link>
+
+        <nav style={{ display: "flex", width: "85%", flexDirection: "row", justifyContent: "space-between" }}>
+          <div>
+            <Link style={{ textDecoration: 'none' }} variant="button" color="textPrimary" href="/farm" className={classes.link}>
+              Play
+            </Link>
+            <Link style={{ textDecoration: 'none' }} variant="button" color="textPrimary" href="/" className={classes.link}>
+              Swap
+            </Link>
+            <Link style={{ textDecoration: 'none' }} variant="button" color="textPrimary" href="/" className={classes.link}>
+              Trade
+            </Link>
+          </div>
+          <div>
+            <Link style={{ textDecoration: 'none' }} variant="button" color="textPrimary" href="/" className={classes.link}>
+              Metamask
+            </Link>
+          </div>
         </nav>
       </Toolbar>
     </AppBar>

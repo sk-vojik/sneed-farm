@@ -4,20 +4,32 @@ import './index.css';
 import App from './App';
 import { BrowserRouter as Router } from "react-router-dom";
 
-import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/core/styles';
+import { createTheme } from '@mui/material/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
-const theme = createMuiTheme({
+const theme = createTheme({
+  overrides: {
+    MuiCssBaseline: {
+      '@global': {
+         body: {
+           background: 'linear-gradient(#F2F5EF 30%, #Cfe2bb 90%)',
+           backgroundRepeat: "no-repeat",
+           backgroundAttachment: "fixed",
+        },
+      },
+    },
+  },
   typography: {
-    "fontFamily": `"Roboto", "Helvetica", "Arial", sans-serif`,
+    "fontFamily": `"Courier", "New", "Arial", sans-serif`,
   },
   palette: {
     type: 'dark',
     primary: {
-      main: '#d4e157',
+      main: '#Cfe2bb',
     },
     secondary: {
-      main: "#ed4b82",
+      main: "#47752a",
     }
   },
 });

@@ -24,6 +24,7 @@ const styles = (theme) => ({
       letterSpacing: "10px",
       fontSize: "2rem"
     },
+    color: "black",
   },
   tagline: {
     '@media (max-width:800px)': {
@@ -40,12 +41,12 @@ class Header extends Component {
     return (
       <>
         <div className={classes.navBar}>
-          <Navbar loading={this.props.loading} user={this.props.loggedInUser} />
+          <Navbar />
         </div>
         <div className={classes.mobileNavBar}>
-          <MobileNavbar loading={this.props.loading} user={this.props.loggedInUser} />
+          <MobileNavbar />
         </div>
-        <div className="">
+        <div className="" style={{ margin: "24px 0px"}}>
           <h1 id="title" className={classes.title}>Sneed Farm</h1>
         </div>
       </>

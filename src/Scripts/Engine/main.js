@@ -1,10 +1,10 @@
-import Game from './game.js'; 
-import GameMap from './gamemap.js';
-import Loader from './loader.js';  
-import Renderer from './renderer.js'; 
-import Mouse from './mouse.js'; 
-import { UI } from './ui.js'; 
-import Economics from './economics.js'; 
+import Game from "./game"; 
+import GameMap from './gamemap';
+import Loader from './loader';  
+import Renderer from './renderer'; 
+import Mouse from './mouse'; 
+import { UI } from './ui'; 
+import Economics from './economics'; 
 
 window.addEventListener('loadGameEngine', loadGameEngine); 
 
