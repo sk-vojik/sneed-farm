@@ -67,10 +67,10 @@ const Navbar = (props) => {
             <Link style={{ textDecoration: 'none' }} variant="button" color="textPrimary" href="/farm" className={classes.link}>
               Play
             </Link>
-            <Link style={{ textDecoration: 'none' }} variant="button" color="textPrimary" href="/" className={classes.link}>
+            <Link style={{ textDecoration: 'none' }} variant="button" color="textPrimary" href="/swap" className={classes.link}>
               Swap
             </Link>
-            <Link style={{ textDecoration: 'none' }} variant="button" color="textPrimary" href="/" className={classes.link}>
+            <Link style={{ textDecoration: 'none' }} variant="button" color="textPrimary" href="/trade" className={classes.link}>
               Trade
             </Link>
           </div>
