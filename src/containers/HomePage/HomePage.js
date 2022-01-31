@@ -13,6 +13,9 @@ const styles = (theme) => ({
     '@media (max-width:800px)': {
       flexDirection: "column"
     },
+    margin: "48px 0px", 
+    display: "flex", 
+    flexDirection: "column",
   },
 
 });
@@ -22,7 +25,7 @@ class HomePage extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <div style={{ margin: "48px 0px", display: "flex", flexDirection: "column" }} className={classes.home}>
+      <div className={classes.home}>
           <HomePageTop />
           <HomePageMid />
           <HomePageBottom />

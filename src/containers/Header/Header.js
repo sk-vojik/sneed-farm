@@ -46,7 +46,7 @@ class Header extends Component {
         <div className={classes.mobileNavBar}>
           <MobileNavbar />
         </div>
-        <div className="" style={{ margin: "24px 0px"}}>
+        <div style={{ margin: "24px 0px"}}>
           <h1 id="title" className={classes.title}>Sneed Farm</h1>
         </div>
       </>

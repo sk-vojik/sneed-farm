@@ -5,14 +5,18 @@ import Trade from "../../components/Trade/Trade";
 
 const styles = (theme) => ({
 
-  home: {
+  trade: {
     display: "flex",
     justifyContent: "space-around",
     '@media (max-width:800px)': {
       flexDirection: "column"
     },
+    margin: "48px 0px",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center"
   },
-
 });
 
 class TradePage extends Component {
@@ -20,8 +24,8 @@ class TradePage extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <div style={{ margin: "48px 0px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }} className={classes.home}>
-          <Trade />
+      <div className={classes.trade}>
+        <Trade />
       </div>
     )
   }

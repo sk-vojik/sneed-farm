@@ -1,21 +1,9 @@
 import React from "react";
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme => ({
-  root: {
-    width: 300,
-    maxWidth: 800,
-    color: "primary",
-  },
-  media: {
-    height: 0,
-    paddingTop: '56.25%', // 16:9
-  },
   container: {
     width: "90%",
     display: "flex"
@@ -29,6 +17,20 @@ const useStyles = makeStyles((theme => ({
   tradeButton: {
     width: "50%",
     padding: "24px 0px"
+  },
+  nftCTAContainer: {
+    display: "flex",
+     alignItems: "center", 
+     width: "100%", 
+     flexDirection: "column", 
+     width: "55%",
+  },
+  imageContainer: {
+    border: "1px solid black", 
+    display: "flex", 
+    justifyContent: "center", 
+    width: "80%", 
+    height: "400px",
   }
 
 })));
@@ -38,10 +40,9 @@ const Trade = (props) => {
   return (
     <>
       <div className={classes.container}>
+        <div className={classes.nftCTAContainer}>
 
-        <div style={{ display: "flex", alignItems: "center", width: "100%", flexDirection: "column", width: "55%" }}>
-
-          <div style={{ border: "1px solid black", display: "flex", justifyContent: "center", width: "80%", height: "400px" }}>
+          <div className={classes.imageContainer}>
             <h2 style={{ margin: "100px 0px", color: "black", }}>
               IMAGE HERE
             </h2>
@@ -52,7 +53,7 @@ const Trade = (props) => {
               Mint An NFT
             </Button>
           </div>
-
+          
         </div>
 
         <div className={classes.cardContainer}>

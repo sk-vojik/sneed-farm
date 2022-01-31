@@ -8,18 +8,17 @@ const useStyles = makeStyles((theme => ({
   root: {
     width: 300,
     maxWidth: 800,
-    color: "primary"
-  },
-  media: {
-    height: 0,
-    paddingTop: '56.25%', // 16:9
+    color: "primary",
   },
   container: {
     display: "flex",
     margin: "240px 0px 0px",
     justifyContent: "space-evenly",
     alignItems: "center",
-  }
+  },
+  typography: {
+    color: "black"
+  },
 
 })));
 
@@ -29,30 +28,30 @@ const HomePageMid = (props) => {
     <div className={classes.container}>
       <Card variant="outlined" style={{backgroundColor: "#Cfe2bb" }} className={classes.root}>
         <CardContent>
-            <Typography style={{color: "black"}} gutterBottom variant="h5" component="div">
+            <Typography className={classes.typography} gutterBottom variant="h5" component="div">
               Total Players
             </Typography>
-            <Typography style={{color: "black"}} variant="body2">
+            <Typography className={classes.typography} variant="body2">
               4200
             </Typography>
         </CardContent>
       </Card>
       <Card variant="outlined" style={{backgroundColor: "#Cfe2bb" }}  className={classes.root}>
         <CardContent>
-            <Typography style={{color: "black"}} gutterBottom variant="h5" component="div">
+            <Typography className={classes.typography} gutterBottom variant="h5" component="div">
               In-game time
             </Typography>
-            <Typography style={{color: "black"}} variant="body2">
+            <Typography className={classes.typography} variant="body2">
               4200 Hours
             </Typography>
         </CardContent>
       </Card>
       <Card variant="outlined" style={{backgroundColor: "#Cfe2bb" }}  className={classes.root}>
         <CardContent>
-            <Typography style={{color: "black"}} gutterBottom variant="h5" component="div">
+            <Typography className={classes.typography} gutterBottom variant="h5" component="div">
               TVL
             </Typography>
-            <Typography style={{color: "black"}} variant="body2">
+            <Typography className={classes.typography} variant="body2">
               $420 Million
             </Typography>
         </CardContent>

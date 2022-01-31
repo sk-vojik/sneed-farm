@@ -26,7 +26,8 @@ const useStyles = makeStyles((theme) => ({
   },
   link: {
     margin: theme.spacing(1, 1.5),
-    color: "black"
+    color: "black",
+    textDecoration: 'none',
   },
   heroContent: {
     padding: theme.spacing(8, 0, 6),
@@ -40,6 +41,12 @@ const useStyles = makeStyles((theme) => ({
       paddingTop: theme.spacing(6),
       paddingBottom: theme.spacing(6),
     },
+  },
+  nav: {
+    display: "flex", 
+    width: "85%", 
+    flexDirection: "row", 
+    justifyContent: "space-between",
   },
 }));
 
@@ -62,20 +69,20 @@ const Navbar = (props) => {
         </Link>
 
 
-        <nav style={{ display: "flex", width: "85%", flexDirection: "row", justifyContent: "space-between" }}>
+        <nav className={classes.nav}>
           <div>
-            <Link style={{ textDecoration: 'none' }} variant="button" color="textPrimary" href="/farm" className={classes.link}>
+            <Link variant="button" color="textPrimary" href="/farm" className={classes.link}>
               Play
             </Link>
-            <Link style={{ textDecoration: 'none' }} variant="button" color="textPrimary" href="/swap" className={classes.link}>
+            <Link variant="button" color="textPrimary" href="/swap" className={classes.link}>
               Swap
             </Link>
-            <Link style={{ textDecoration: 'none' }} variant="button" color="textPrimary" href="/trade" className={classes.link}>
+            <Link variant="button" color="textPrimary" href="/trade" className={classes.link}>
               Trade
             </Link>
           </div>
           <div>
-            <Link style={{ textDecoration: 'none' }} variant="button" color="textPrimary" href="/" className={classes.link}>
+            <Link variant="button" color="textPrimary" href="/" className={classes.link}>
               Metamask
             </Link>
           </div>

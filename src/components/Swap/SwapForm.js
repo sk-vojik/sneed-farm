@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { withStyles } from "@material-ui/core/styles";
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
-import MenuItem from '@material-ui/core/MenuItem';
 import Typography from '@material-ui/core/Typography';
 
 const styles = (theme) => ({
@@ -21,6 +20,15 @@ const styles = (theme) => ({
   text: {
     backgroundColor: "white",
     border: `1px solid ${theme.palette.divider}`,
+  },
+  swapButton: {
+    margin: "24px 0", 
+    fontWeight: "heavy", 
+    padding: "20px 146px",
+     fontSize: "17px", 
+     width: "80%", 
+     maxWidth: "220px", 
+     whiteSpace: "nowrap",
   }
 });
 
@@ -65,7 +73,7 @@ class Swap extends Component {
           className={classes.text}
         />
         <Button
-          style={{ margin: "24px 0", fontWeight: "heavy", padding: "20px 146px", fontSize: "17px", width: "80%", maxWidth: "220px", whiteSpace: "nowrap" }}
+          className={classes.swapButton}
           variant="contained"
           color="primary"
           disabled={this.state.error}
